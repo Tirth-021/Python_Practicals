@@ -66,6 +66,7 @@ LMS python assignment with hands on practice with core concepts of python.
         - Output: ["()"] 
 
 > Approach to solve:  
+
 > A function is created for generating parenthesis.  
 > The first for loops iterates for the number of parenthesis.  
 > The second for loop produces the left part from center.  
@@ -105,6 +106,7 @@ LMS python assignment with hands on practice with core concepts of python.
         - Output: [["a"]]
 
 > Approach to solve:  
+
 > Default dictionary is first of all imported so that the keys need not to be defined.  
 > After that the inputs are appended to a list.  
 > The words collected in list is sorted and stored as a key.  
