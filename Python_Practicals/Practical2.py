@@ -4,8 +4,8 @@ def generate_parenthesis(n):
         return ['']
     return ['(' + left + ')' + right
             for i in range(n)
-            for left in generate_parenthesis(i)
-            for right in generate_parenthesis(n - i - 1)]
+            for left in generate_parenthesis(i) #generates the left part of series
+            for right in generate_parenthesis(n - i - 1)]  # generates the right part of series.
 
 
 n = int(input())
