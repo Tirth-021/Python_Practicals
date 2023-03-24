@@ -45,6 +45,8 @@ LMS python assignment with hands on practice with core concepts of python.
 
 ![image](https://user-images.githubusercontent.com/125239162/227108433-24c8f1b7-1523-4208-ad04-43e60242e645.png)
 
+### Practical 2  
+
 2. Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
     Constraints:
@@ -74,6 +76,7 @@ LMS python assignment with hands on practice with core concepts of python.
 
 ![image](https://user-images.githubusercontent.com/125239162/227128584-67789751-e257-4fc2-8ec4-2a74d58b8a03.png)
 
+### Practical 3  
 
 3. Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 
