@@ -43,7 +43,7 @@ LMS python assignment with hands on practice with core concepts of python.
 > On getting the answer it is once again converted to words by using a function "numtostring".  
 > Final output is shown.  
 
-![image](https://user-images.githubusercontent.com/125239162/227108433-24c8f1b7-1523-4208-ad04-43e60242e645.png)
+![image](https://user-images.githubusercontent.com/125239162/228430765-e0747945-d0c1-4a4e-99a8-43b7eb7cbeb2.png)
 
 ### Practical 2  
 
@@ -74,7 +74,10 @@ LMS python assignment with hands on practice with core concepts of python.
 > The second for loop produces the left part from center.  
 > The third loop produces the right part from center.  
 
-![image](https://user-images.githubusercontent.com/125239162/227128584-67789751-e257-4fc2-8ec4-2a74d58b8a03.png)
+
+![image](https://user-images.githubusercontent.com/125239162/228431232-637ad833-9847-4ba3-ad6b-c65bb39e060e.png)
+
+
 
 ### Practical 3  
 
@@ -116,7 +119,8 @@ LMS python assignment with hands on practice with core concepts of python.
 > The values of this dictionary is converted to list.  
 > The final list is printed as output.  
 
+![image](https://user-images.githubusercontent.com/125239162/228430813-60592d8a-4238-4973-8f36-1a612b601ab2.png)
 
 
-![image](https://user-images.githubusercontent.com/125239162/227140282-477bf877-c0ca-40be-90d8-26cc7bd198c4.png)
+
 
