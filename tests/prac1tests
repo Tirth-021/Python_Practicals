@@ -1,0 +1,16 @@
+import unittest
+
+
+import practical_1 
+
+class Testing(unittest.TestCase):
+    def test_sum(self):
+        self.assertEqual(practical_1.string_to_num(onezero),'10')
+        self.assertEqual(practical_1.string_to_num(twozero),'20')
+    
+
+
+if __name__=='__main__':
+    unittest.main()
+    
+   
