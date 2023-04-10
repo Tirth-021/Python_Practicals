@@ -24,26 +24,31 @@ def group_anagrams(words):
 
 
 elem = eval(input())
-# elem3 = elem = [word for word in input().lower().split(",")]
 
-try:
-    for i in elem:
-        if len(i) > 100:
-            raise moreletters
-        for j in i:
-            if j.isupper():
-                raise ValueError
-    if len(elem) > 104:
-        raise lengtherror
 
-except ValueError:
-    print("Please don't enter capital strings")
-except lengtherror:
-    print("More arguments than expected. ")
-except moreletters:
-    print("Length os string is more. ")
+def main():
+    try:
+        for i in elem:
+            if len(i) > 100:
+                raise moreletters
+            for j in i:
+                if j.isupper():
+                    raise ValueError
+        if len(elem) > 104:
+            raise lengtherror
 
-else:
-    group_anagrams(elem)
+    except ValueError:
+        print("Please don't enter capital strings")
+    except lengtherror:
+        print("More arguments than expected. ")
+    except moreletters:
+        print("Length os string is more. ")
 
-    print(group_anagrams(elem))
+    else:
+        group_anagrams(elem)
+
+        print(group_anagrams(elem))
+
+
+if __name__ == "__main__":
+    main()

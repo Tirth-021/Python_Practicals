@@ -30,7 +30,7 @@ class Prac1:
 
         """conditions used to replace a word to following number.
          It would still be a string only"""
-        
+
         if 'zero' in num:
             num = num.replace("zero", "0")
         if 'one' in num:
@@ -52,7 +52,7 @@ class Prac1:
         if 'nine' in num:
             num = num.replace("nine", "9")
         return num
-    
+
     def num_to_string(num):
 
         """function used to convert numbers to word"""
@@ -88,4 +88,9 @@ class Prac1:
             return Prac1.Gcd(y, x % y)
 
 
-get_values()
+def main():
+    get_values()
+
+
+if __name__ == "__main__":
+    main()
