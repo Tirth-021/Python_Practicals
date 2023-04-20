@@ -6,17 +6,21 @@ def get_values():
     print("Enter first number")
     num = input()  # converting the returned string to integer
     try:
+        if num.isnumeric():
+            print("Please enter in words.")
         number1 = int(Prac1.string_to_num(num))
     except ValueError:
         print("Please enter correct format")
-
+        exit()
     print("Enter second number")
     num2 = input()
     try:
+        if num.isnumeric():
+            print("Please enter in words.")
         number2 = int(Prac1.string_to_num(num2))
     except ValueError:
         print("Please enter correct format")
-
+        exit()
     else:
         temp = str(Prac1.Gcd(number1, number2))  # converting the returned GCD to string
         result = Prac1.num_to_string(temp)
@@ -29,7 +33,9 @@ class Prac1:
     def string_to_num(num):
 
         """conditions used to replace a word to following number.
-         It would still be a string only"""
+         It would still be a string only
+         Input: a string representing number
+         Output: a string in numeric format"""
 
         if 'zero' in num:
             num = num.replace("zero", "0")
@@ -55,7 +61,9 @@ class Prac1:
 
     def num_to_string(num):
 
-        """function used to convert numbers to word"""
+        """function used to convert numbers to word
+           Input: A numeric value
+           Output: Word representing the number"""
 
         if '0' in num:
             num = num.replace("0", "zero")
@@ -81,7 +89,9 @@ class Prac1:
         return num
 
     def Gcd(x, y):
-        """ For calculating the GCD"""
+        """ For calculating the GCD
+            Input: 2 numbers
+            Output: GCD of those 2 numbers"""
         if y == 0:
             return x
         else:

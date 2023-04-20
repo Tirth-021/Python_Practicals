@@ -2,17 +2,19 @@
 
 
 class LengthError(Exception):
-    "Raised Number of strings is more than expected. "
+    """Raised Number of strings is more than expected. """
     pass
 
 
 class MoreLetters(Exception):
-    "Raised length of string is more than expected. "
+    """Raised length of string is more than expected. """
     pass
 
 
 def group_anagrams(words):
-    """Function to group anagrams by sorting"""
+    """Function to group anagrams by sorting
+       Input: list of words
+       Output: list of words with sorted anagrams"""
     anagram_dict = {}
     for word in words:
         sorted_word = ''.join(sorted(word))
@@ -25,30 +27,28 @@ def group_anagrams(words):
 
 elem = eval(input())
 
+try:
+    for i in elem:
+        if isinstance(i, int):
+            raise TypeError
+        if len(i) > 100 or len(i) < 0:
+            raise MoreLetters
+        for j in i:
+            if j.isupper():
+                raise ValueError
+    if len(elem) > 104 or len(elem) < 1:
+        raise LengthError
 
-def main():
-    try:
-        for i in elem:
-            if len(i) > 100:
-                raise moreletters
-            for j in i:
-                if j.isupper():
-                    raise ValueError
-        if len(elem) > 104:
-            raise lengtherror
+except TypeError:
+    print("Please enter only string")
+except ValueError:
+    print("Please don't enter capital strings")
+except LengthError:
+    print("More or Less arguments than expected. ")
+except MoreLetters:
+    print("Length os string is more. ")
 
-    except ValueError:
-        print("Please don't enter capital strings")
-    except lengtherror:
-        print("More arguments than expected. ")
-    except moreletters:
-        print("Length os string is more. ")
+else:
+    group_anagrams(elem)
 
-    else:
-        group_anagrams(elem)
-
-        print(group_anagrams(elem))
-
-
-if __name__ == "__main__":
-    main()
+    print(group_anagrams(elem))

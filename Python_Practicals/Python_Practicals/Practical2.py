@@ -1,5 +1,7 @@
 def generate_parenthesis(n):
-    """To generate the sequence as mentioned"""
+    """To generate the sequence as mentioned
+       Input: Number of brackets
+       Output: Sequence of brackets"""
     if n == 0:
         return ['']
     return ['(' + left + ')' + right
@@ -21,7 +23,6 @@ def main():
                 print(result)
         else:
             raise TypeError
-
 
     except TypeError:
         print("Please enter a number")
